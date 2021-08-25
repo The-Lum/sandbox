@@ -33,6 +33,7 @@ jobs:
       - name: Run a multi-line script
         run: |
           echo Add other actions to build,
-          echo test, and deploy your project.
-          magick -v
-          magick convert -h
+          which convert
+          
+          # magick -v
+          # magick convert -h
