@@ -35,8 +35,10 @@ jobs:
           echo Add other actions to build,
           which convert
           #convert -v
-          magick logo: logo.gif
-          identify logo.gif
+          lua -v
+          compare -v
+          # magick logo: logo.gif
+          # identify logo.gif
           
           # magick -v
           # magick convert -h
