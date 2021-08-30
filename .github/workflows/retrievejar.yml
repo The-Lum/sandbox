@@ -19,7 +19,8 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: curl -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /app/plantuml.jar
+        run: shell pwd && ls
+        # run: curl -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /app/plantuml.jar
 
       - name: Commit the changes, if any
         uses: stefanzweifel/git-auto-commit-action@v4.1.1
