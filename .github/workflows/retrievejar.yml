@@ -19,7 +19,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: shell pwd && ls
+        run: pwd && ls
         # run: curl -L https://sourceforge.net/projects/plantuml/files/plantuml.jar/download -o /app/plantuml.jar
 
       - name: Commit the changes, if any
