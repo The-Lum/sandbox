@@ -9,5 +9,5 @@ jobs:
       - uses: actions/checkout@v2
       - name: Run some test
         run: |
-	       ls -lrt
-	       ./lib/mo/mo -h
+          ls -lrt
+          ./lib/mo/mo -h
