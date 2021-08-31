@@ -1,0 +1,13 @@
+name: Make a test
+on:
+  push:
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run some test
+        run: |
+	       ls -lrt
+	       ./lib/mo/mo -h
