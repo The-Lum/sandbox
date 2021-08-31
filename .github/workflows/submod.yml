@@ -19,4 +19,7 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
-        run: git submodule add https://git.io/get-mo
+        run: |
+          git submodule add https://github.com/tests-always-included/mo lib/mo
+          ls
+        
