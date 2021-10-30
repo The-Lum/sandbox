@@ -2,6 +2,6 @@
 
 <table>
 {% tablerow product in site.data.members %}
-  {{ product }}
+  {{ product.me }}
 {% endtablerow %}
 </table>
