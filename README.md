@@ -7,6 +7,12 @@
 </table>
 
 
+### me
 {% for me in site.data.members %}
-- {{ me.me }}
+- {{ me }}
+{% endfor %}
+
+### t.me
+{% for t in site.data.members %}
+- {{ t.me }}
 {% endfor %}
