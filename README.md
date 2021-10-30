@@ -1,7 +1,7 @@
 ## Welcome to GitHub Pages
 
 <table>
-{% tablerow product in site.data.members %}
-  {{ product.me }}
+{% tablerow me in site.data.members %}
+  {{ me }}
 {% endtablerow %}
 </table>
