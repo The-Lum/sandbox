@@ -18,10 +18,14 @@
 {% endfor %}
 
 
+<hr>
+TEST
+* tzst
+* test2
 {% assign aa = site.data.members | split: " " %}
 
 {% for member in aa %}
--  {{ member }}
+* {{member}}
 {% endfor %}
 
 
