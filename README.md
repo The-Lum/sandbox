@@ -23,3 +23,17 @@
 {% for member in aa %}
 -  {{ member }}
 {% endfor %}
+
+
+<hr>
+
+ {% assign pages = site.pages | sort:"weight"  %}
+<ul>
+  {% for p in pages %}
+    <li>
+      <a {% if p.url == page.url %}class="active"{% endif %} href="{{ p.url }}">
+        {{ p.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
