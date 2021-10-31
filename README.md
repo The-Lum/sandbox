@@ -25,8 +25,7 @@ TEST
 {% assign aa = site.data.members | split: " " %}
 
 {% for member in aa %}
-* {{member}}
-{% endfor %}
+* {{member}}{% endfor %}
 
 
 <hr>
